@@ -14,4 +14,8 @@ class chessBoardGraph {
         this.board = new Map();
         this.buildGraph();
     }
+
+    buildGraph() {
+        
+    }
 }
