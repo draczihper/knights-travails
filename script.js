@@ -16,6 +16,8 @@ class chessBoardGraph {
     }
 
     buildGraph() {
-        
+        for(let i = 0; i < BOARD_SIZE; i++) {
+            
+        }
     }
 }
