@@ -25,7 +25,17 @@ visited.add(`${startX},${startY}`);
 while (queue.length > 0) {
     const path = queue.shift();
 
-    const [currentX, currentY] = path[path.length - 1]
+    const [currentX, currentY] = path[path.length - 1];
+
+    for (let [dx, dy] of allowedKnightMoves) {
+        const newX = currentX + dx;
+        const newY = currentY + dy;
+
+
+        if (isValid(newX, newY) && !visited.has(`${newX},${newY}`)) {
+            
+        }
+    }
 }
 
 class chessBoardGraph {
