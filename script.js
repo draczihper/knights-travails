@@ -19,6 +19,9 @@ function knightMoves(start, end) {
 
 const queue = [[start]];
 
+const visited = new Set();
+visited.add(`${startX},${startY}`);
+
 
 
 class chessBoardGraph {
