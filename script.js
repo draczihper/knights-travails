@@ -17,6 +17,9 @@ function knightMoves(start, end) {
     }
 }
 
+const queue = [[start]];
+
+
 
 class chessBoardGraph {
     constructor() {
