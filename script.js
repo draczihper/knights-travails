@@ -22,7 +22,11 @@ const queue = [[start]];
 const visited = new Set();
 visited.add(`${startX},${startY}`);
 
+while (queue.length > 0) {
+    const path = queue.shift();
 
+    const [currentX, currentY] = path[path.length - 1]
+}
 
 class chessBoardGraph {
     constructor() {
