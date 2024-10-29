@@ -38,6 +38,9 @@ while (queue.length > 0) {
             if (newX === endX && newY === endY) {
                 return newPath;
             }
+
+            queue.push(newPath);
+            visited.add(`${newX},${newY}`)
         }
     }
 }
