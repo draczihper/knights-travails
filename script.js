@@ -34,6 +34,10 @@ while (queue.length > 0) {
 
         if (isValid(newX, newY) && !visited.has(`${newX},${newY}`)) {
             const newPath = [...path, [newX, newY]];
+
+            if (newX === endX && newY === endY) {
+                return newPath;
+            }
         }
     }
 }
